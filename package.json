@@ -1,0 +1,21 @@
+{
+  "name": "simple-dockerfile",
+  "description": "``` shell npm i -D simple-dockerfile ln -s Dockerfile ./node_modules/simple-dockerfile/Dockerfile ```",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noblesamurai/simple-dockerfile.git"
+  },
+  "keywords": [
+    "docker",
+    "Dockerfile"
+  ],
+  "author": "Tim Allen <tim@noblesamurai.com>",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/noblesamurai/simple-dockerfile/issues"
+  },
+  "homepage": "https://github.com/noblesamurai/simple-dockerfile#readme"
+}

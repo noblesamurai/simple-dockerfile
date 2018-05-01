@@ -1,0 +1,5 @@
+# simple Dockerfile
+``` shell
+npm i -D simple-dockerfile
+ln -s Dockerfile ./node_modules/simple-dockerfile/Dockerfile
+```

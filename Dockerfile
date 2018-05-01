@@ -1,3 +1,5 @@
+# This Dockerfile was installed with the npm package simple-dockerfile.
+# Changing it may result in conflicts with updates, so just be aware and use git.
 FROM node:8
 ENV NPM_CONFIG_LOGLEVEL warn
 

@@ -1,8 +1,10 @@
 {
   "name": "simple-dockerfile",
-  "description": "``` shell npm i -D simple-dockerfile ln -s Dockerfile ./node_modules/simple-dockerfile/Dockerfile ```",
+  "description": "Simple dockerfile for building node.js applications",
   "version": "1.0.0",
-  "main": "index.js",
+  "bin": {
+    "install-dockerfile": "./bin/install.js"
+  },
   "scripts": {},
   "repository": {
     "type": "git",
@@ -17,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/noblesamurai/simple-dockerfile/issues"
   },
-  "homepage": "https://github.com/noblesamurai/simple-dockerfile#readme"
+  "homepage": "https://github.com/noblesamurai/simple-dockerfile#readme",
+  "dependencies": {
+    "fs-extra": "^6.0.0"
+  }
 }

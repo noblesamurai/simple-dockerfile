@@ -1,5 +1,6 @@
 # simple Dockerfile
-``` shell
+
+```shell
 npm i -D simple-dockerfile
 npx install-dockerfile
 cat Dockerfile

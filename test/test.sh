@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
-pwd
+$DIR=`pwd`
 cd ./test/fixtures/noAptfile
 npx install-dockerfile
 docker build .
+rm Dockerfile
+cd $DIR

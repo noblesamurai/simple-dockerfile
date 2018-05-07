@@ -6,11 +6,9 @@ ENV NPM_CONFIG_LOGLEVEL warn
 # Create app directory
 WORKDIR /code
 
-COPY Aptfile ./
-RUN apt-get update && apt-get install -y `cat Aptfile`
+COPY Aptfile* .npmrc* package*.json ./
 
-COPY package*.json ./
-ADD .npmrc ./
+RUN if [ -f Aptfile ]; then apt-get update && apt-get install -y `cat Aptfile`; fi
 RUN npm install
 
 ADD . ./

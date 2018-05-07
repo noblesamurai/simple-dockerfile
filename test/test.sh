@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
-$DIR=`pwd`
+set -e
+DIR=`pwd`
 cd ./test/fixtures/noAptfile
+npm link ../../..
 npx install-dockerfile
 docker build .
 rm Dockerfile

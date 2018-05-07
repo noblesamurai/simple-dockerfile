@@ -5,7 +5,9 @@
   "bin": {
     "install-dockerfile": "./bin/install.js"
   },
-  "scripts": {},
+  "scripts": {
+    "test": "./test/test.sh"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/noblesamurai/simple-dockerfile.git"

@@ -6,12 +6,13 @@ ENV NPM_CONFIG_LOGLEVEL warn
 # Create app directory
 WORKDIR /code
 
-# HACK: The wildcard is on Aptfile* and .npmrc* so they can be optional
-# (otherwise docker won't build if they are missing).
-# package*.json will capture package-lock.json as well.
-COPY Aptfile* .npmrc* package*.json ./
-
+# HACK: The wildcard is on .npmrc* so it can be optional
+# (otherwise docker won't build if it is missing).
+COPY Aptfile .npmrc* ./
 RUN if [ -f Aptfile ]; then apt-get update && apt-get install -y `cat Aptfile`; fi
+
+# package*.json will capture package-lock.json as well.
+COPY package*.json ./
 RUN npm install
 
 ADD . ./
